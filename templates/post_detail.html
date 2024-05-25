@@ -1,7 +1,7 @@
 {% extends "_base.html" %}
 {% block content %}
-    <h2>{{ post.tittle }}</h2>
+    <h2>{{ post.title }}</h2>
     <p> {{ post.body }} </p>
-    <a href=" {% url 'post_update' post.pk %}">Edit</a>
+    <a href=" {% url 'update' post.pk %}">Edit</a>
     <a href="{% url 'delete' post.pk %}">Delete</a>
     {% endblock content %}
